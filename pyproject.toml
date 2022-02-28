@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "squad"
+version = "0.1.0"
+description = ""
+authors = []
+
+[tool.poetry.dependencies]
+python = "~3.9"
+tqdm = "^4.62.3"
+torch = "^1.10.2"
+transformers = "^4.16.2"
+optuna = "^2.10.0"
+pytorch-lightning = "^1.5.10"
+click = "^8.0.4"
+pandas = "^1.4.1"
+Flask = "^2.0.3"
+flask-restx = "^0.5.1"
+matplotlib = "^3.5.1"
+more-itertools = "^8.12.0"
+Werkzeug = "^2.0.3"
+uWSGI = "^2.0.20"
+streamlit = "^1.6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+poetry = 'poetry.console:run'
+squad = 'squad.__main__:squad'
